@@ -1,0 +1,86 @@
+{
+    "sections": [
+        {
+            "title": "Плеер",
+            "items": [
+                {
+                    "id": "betterPlayer",
+                    "name": "Улучшенный плеер",
+                    "description": "Визуально улучшенный плеер. Для возвращения отключите настройку и переразверните плеер.",
+                    "type": "button",
+                    "bool": true,
+                    "defaultParameter": true
+                },
+                {
+                    "id": "playerButtonsBackground",
+                    "name": "Фон для элементов управления плеера",
+                    "description": "Фон для элементов плеера. Позволяет визуально отделить элементы управления от фона. Работает только про включенном улучшенном плеере.",
+                    "type": "button",
+                    "bool": true,
+                    "defaultParameter": false
+                },
+                {
+                    "id": "playerButtonsInvertBackground",
+                    "name": "Инвертировать фон для элементов управления плеера",
+                    "description": "Инвертированный фон для элементов плеера. Работает только про включенном фоне для элементов управления плеером.",
+                    "type": "button",
+                    "bool": false,
+                    "defaultParameter": false
+                }
+            ]
+        },
+        {
+            "title": "Фон",
+            "items": [
+                {
+                    "id": "playerBackground",
+                    "name": "Обложка на фон",
+                    "description": "Заменяет фон плеера на обложку трека",
+                    "type": "button",
+                    "bool": true,
+                    "defaultParameter": true
+                },
+                {
+                    "id": "autoBlackout",
+                    "name": "Нормализация яркости",
+                    "description": "Автоматическое нормирование яркости фона плеера",
+                    "type": "button",
+                    "bool": true,
+                    "defaultParameter": false
+                },
+                {
+                    "id": "brightness",
+                    "name": "Яркость (%)",
+                    "description": "Яркость фона полноэкранного плеера в процентах",
+                    "type": "slider",
+                    "min": 0,
+                    "max": 100,
+                    "step": 1,
+                    "value": 34,
+                    "defaultParameter": 70
+                },
+                {
+                    "id": "blur",
+                    "name": "Блюр (px)",
+                    "description": "Блюр фона полноэкранного плеера в пикселях",
+                    "type": "slider",
+                    "min": 0,
+                    "max": 30,
+                    "step": 1,
+                    "value": 5,
+                    "defaultParameter": 5
+                },
+                {
+                    "id": "backgroundImage",
+                    "name": "Фоновое изображение",
+                    "description": "Установить своё изображение для полноэкранного плеера",
+                    "type": "file",
+                    "filePath": "",
+                    "defaultParameter": {
+                        "filePath": ""
+                    }
+                }
+            ]
+        }
+    ]
+}

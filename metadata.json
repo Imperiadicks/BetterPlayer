@@ -1,0 +1,20 @@
+{
+    "name": "BetterPlayer",
+    "author": "WolfySoCute",
+    "description": "Кастомизируемый плеер!",
+    "version": "1.4.1",
+    "image": "image.png",
+    "banner": "banner.png",
+    "type": "script",
+    "css": "style.css",
+    "script": "script.js",
+    "tags": [
+        "Script",
+        "Customization",
+        "Player"
+    ],
+    "fromPext": true,
+    "allowedURLs":[
+        "https://mc.yandex.ru/clmap"
+        ]
+}
