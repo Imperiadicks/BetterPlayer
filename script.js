@@ -551,7 +551,12 @@ betterPlayer.sonataState.on('openPlayer', ({ settings, styles, state }) => {
 
 betterPlayer.sonataState.on('trackChange', ({ settings, state }) => {
     const customLyricsButton = document.querySelector('.customPlayerControls .custom-text');
-
+    const setting = settings.get('playerBackground');
+    if (!setting) return;
+    if (setting.value) {
+        const image = 'https://' + state.track.coverUri.replace('%%', '1000x1000');
+        setPlayerBackground(settings, image);
+    }
     const all = Array.from(document.querySelectorAll(
         'button[data-test-id="PLAYERBAR_DESKTOP_SYNC_LYRICS_BUTTON"]:not(.custom-text):not([data-test-id="PLAYERBAR_DESKTOP_SYNC_LYRICS_BUTTON_CLONE"])'
     ));
